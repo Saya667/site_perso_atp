@@ -1,0 +1,258 @@
+/* -- FONCTIONNEMENT GENERAL -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border : 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #FFEDCB;;
+}
+
+
+section:not(:target), section:target~#accueil{
+    display: none;
+}
+
+section:target {
+    display: flex;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* -- NAVBAR -- */
+
+header {
+    padding-top : 0.5%;
+    padding-bottom: 0.5%;
+    font-weight: 500;
+    background-color:#384454;
+    position: fixed;
+    top : 0px;
+    left : 0px;
+    width: 100%;
+}
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav span{
+    color: #FFFFFF;
+    font-size: 5vh;
+    margin : 1vh 0 1vh 1vw;
+}
+
+/* NAVLIST */
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    margin : 3vh 3vw 3vh 1vw;
+    font-size : 2vh;
+}
+
+ul li a:link{
+    text-decoration: none;
+    color : whitesmoke;
+}
+
+ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+ul li a:visited{
+    color: white;
+}
+
+/* -- FOOTER  -- */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom : 0 ;
+    background-color:#384454;
+    color: white;
+}
+
+footer a {
+    padding-right: 5vw;
+    color: white;
+}
+
+footer p {
+    padding-left: 5vw;
+}
+
+footer a:visited{
+    color: white;
+}
+
+
+/* -- SECTIONS  -- */
+
+section{
+    padding-top : 12vh ;
+}
+
+section#accueil{
+    justify-content: center;
+    margin: auto;
+    line-height: 5vh;
+}
+
+section#competences, section#experiences, section#formation, section#contact{
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width : 80vw;
+    margin: auto;
+}
+
+section#a_propos{
+    width: 70%;
+    margin: auto;
+}
+
+section label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600 ;
+}
+
+/* -- ARTICLES -- */
+
+section article{
+    background-color: white;
+    width: 37vw;
+    margin-top : 5vh;
+    margin-bottom: 5vh;
+
+    /* -- BOX  -- */
+
+    box-shadow: -1px -1px 10px 7px rgba(102,98,98,0.76);
+    -webkit-box-shadow: -1px -1px 10px 7px rgba(102,98,98,0.76);
+    -moz-box-shadow: -1px -1px 10px 7px rgba(102,98,98,0.76);
+    border-radius: 20px;
+}
+
+section article p{
+    padding-left: 2%;
+}
+
+.infos_perso{
+    padding : 2% 3% 0% 3% ;
+}
+
+.infos_perso p{
+    margin-bottom: 2vh;
+}
+/* -- Images -- */
+
+.div_img{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section#competences img, section#experiences img, section#formation img{
+    width : auto;
+    height: 15vh ;
+    margin-top : 5vh ;
+    margin-bottom: 5vh;
+}
+
+section#accueil img{
+    width: 15vw;
+    height: 35vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+section#a_propos img{
+    width: 30vw;
+    height: auto;
+    margin-right: 2vw;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* -- Formulaire -- */
+
+Section#contact{
+    justify-content: center;
+    width : 100vw;
+    height: fit-content;
+    flex-wrap: wrap;
+    
+}
+
+Section#contact h1, Section#contact h2, Section#contact h3{
+    padding-top : 2vh;
+    padding-bottom: 2vh;
+}
+
+input{
+    width: 15vw;
+    height: 5vh;
+    border : thin solid whitesmoke;
+    border-radius: 5px; 
+}
+
+.contact_us{
+    background-color:#fbdf93;
+    width: 20vw;
+    padding-left : 2vw ;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px;
+
+}
+
+.champs{
+    background-color: white;
+    width: 35vw;
+    padding-left : 2vw ;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius : 20px ;
+}
+
+textarea{
+    height: 10vh;
+    width: 25vw;
+    margin-bottom: 1vh;
+    resize: none;
+    border : thin solid whitesmoke;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius : 20px ;
+}
+
+.bouton{
+    width: 20vh;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-bottom: 2vh;
+}
+
+.rgpd{
+    font-size: 10px;
+    color: #677683;
+    padding-bottom: 2vh;
+}
+
+
